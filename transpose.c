@@ -12,7 +12,15 @@ int* generateMatrix(int n){
     return matrix;
 }
 
-int *
+void printMatrix(int* matrix, int n){
+    int i, j;
+    for(i = 0; i < n; i++){
+        for(j = 0; j < n; j++){
+            printf("%d ", matrix[(n * i) + j]);
+        }
+        printf("\n");
+    }
+}
 
 int main(){
     int n = -1;
